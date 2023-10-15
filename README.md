@@ -1,5 +1,6 @@
 # cuda_icp
 GPU-accelerated iterative closest point (ICP) algorithm
+Full blog at: https://juhyungsprojects.blogspot.com/2023/10/iterative-closest-point-algorithm-using.html
 
 Slowed down and showing the correspondence lines (blue):
 
