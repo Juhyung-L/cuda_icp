@@ -1,0 +1,18 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "CUDA C++: Launch",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "/home/dev_ws/install/cuda_icp/lib/cuda_icp/test_scan_match",
+            "args": "--ros-args -p file_path:=/home/dev_ws/src/cuda_icp/data/dragon.txt -p rz:=0.0 -p half_length:=0.2 -p centery:=0.2"
+        }
+    ]
+}
+// "--ros-args -p file_path:=/home/dev_ws/src/cuda_icp/data/box.txt -p rz:=10.0 -p half_length:=0.6"
+// "--ros-args -p file_path:=/home/dev_ws/src/cuda_icp/data/dragon.txt -p rz:=0.0 -p half_length:=0.2 -p centery:=0.2"
+// "--ros-args -p file_path:=/home/dev_ws/src/cuda_icp/data/waymo.txt -p rz:=10.0 -p half_length:=30.0 -p point_size:=0.1 -p line_size:=0.1"

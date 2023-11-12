@@ -187,7 +187,7 @@ void ScanMatcher::matchScan(std::vector<double3>& src_pc, Octree& tgt_octree)
 
         // visualize
         vis_.visualizePC(u_src_pc, NUM_SRC_PC, 0.0, 1.0, 0.0, true);
-        vis_.visualizeNN(u_corr_src_pc, u_corr_tgt_pc, NUM_CORR, 0.0, 0.0, 1.0, true);
+        // vis_.visualizeNN(u_corr_src_pc, u_corr_tgt_pc, NUM_CORR, 0.0, 0.0, 1.0, true);
 
         // calculate centriods for src and tgt correspondence pc
         double3 src_centroid = make_double3(0.0, 0.0, 0.0);
@@ -281,13 +281,18 @@ void ScanMatcher::matchScan(std::vector<double3>& src_pc, Octree& tgt_octree)
         fprintf(stderr, "Error: %.10f\n", e); // print 10 decimal places
         ++iter;
         fprintf(stderr, "Iteration: %d\n", iter);
+        
+        // for debug
+        // char a = getchar();
+        // if(a == 'q')
+        // {
+        //     fprintf(stderr, "Exiting scan matching loop\n");
+        //     break;
+        // }
 
-        char a = getchar();
-        if(a == 'q')
-        {
-            fprintf(stderr, "Exiting scan matching loop\n");
-            break;
-        }
+        // for recording
+        // sleep(1);
+        // usleep(50000);
     }
 
     // copy the matched source point cloud
