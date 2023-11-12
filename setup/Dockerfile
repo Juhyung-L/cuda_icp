@@ -42,6 +42,3 @@ RUN echo "export PATH=$PATH:/usr/local/cuda/bin" >> ~/.bashrc && \
     echo "source /home/dev_ws/install/setup.bash" >> ~/.bashrc
     
 WORKDIR /home/dev_ws
-
-RUN git config --global user.email "juhyunglee0313@gmail.com"
-RUN git config --global user.name "Juhyung-L"
