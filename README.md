@@ -1,6 +1,6 @@
 # cuda_icp
 Octree-based CUDA-accelerated iterative closest point (ICP) algorithm
-Full blog at: https://juhyungsprojects.blogspot.com/2023/10/iterative-closest-point-algorithm-using.html
+Full blog at: https://juhyunglee0313.wixsite.com/portfolio/post/iterative-closest-point-algorithm-octree-based-and-cuda-accelerated
 
 Slowed down and showing the correspondence lines (blue):
 
